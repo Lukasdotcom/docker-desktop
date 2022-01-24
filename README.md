@@ -3,7 +3,7 @@
 This is a simple docker container that contains a desktop enivroment and a novnc server simply run the command below to start it.
 
 ``
-docker run --rm -d -p 80:80 --name lxde lukasdotcom/lxde
+docker run --rm -d -p 80:80 --name dekstop lukasdotcom/docker-dekstop
 ``
 
 You can also add this argument to change the default password from ubuntu to something else.
