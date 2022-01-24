@@ -3,12 +3,17 @@ ENV DEBIAN_FRONTEND noninteractive
 ENV TZ America/Detroit
 RUN apt update
 RUN apt upgrade -y
-RUN apt -y install tightvncserver
-RUN apt install -y lxde
-RUN apt install -y expect
-RUN apt install -y python3
-RUN apt install -y git
-RUN apt install -y python3-numpy
+RUN apt install -y xfce4
+RUN apt install -y tightvncserver --no-install-recommends
+RUN apt install -y expect --no-install-recommends
+RUN apt install -y python3 --no-install-recommends
+RUN apt install -y git --no-install-recommends
+RUN apt install -y python3-numpy --no-install-recommends
+RUN apt install -y firefox --no-install-recommends
+RUN apt install -y xfce4-taskmanager --no-install-recommends
+RUN apt install -y xfce4-terminal
+RUN apt remove -y gnome-terminal
+RUN apt -y autoremove
 WORKDIR "/root"
 RUN git clone https://github.com/novnc/noVNC.git
 #RUN apt -y install sudo
