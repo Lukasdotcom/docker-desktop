@@ -1,4 +1,4 @@
-# lxde
+# Docker Desktop
 
 This is a simple docker container that contains a desktop enivroment and a novnc server simply run the command below to start it.
 
