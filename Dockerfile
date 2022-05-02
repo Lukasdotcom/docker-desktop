@@ -1,4 +1,4 @@
-FROM ubuntu:impish
+FROM ubuntu:jammy
 ENV DEBIAN_FRONTEND noninteractive
 ENV TZ America/Detroit
 RUN apt update
